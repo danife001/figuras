@@ -1,0 +1,147 @@
+.fila{
+    width: 80%;
+    /* ancho maximo  */
+    max-width: 1200px;
+    height: 600px;
+    /* coolorss mirar colores y colorhunt  */
+    border: 2px solid rgb(127, 255, 212);
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+    /* display : flex ajustar columnas */
+    display: flex;
+    /* justify se encarga de ubicar los elementos por el eje x   */
+    /* space evenly mismo espacio a la derecha medio e izquierada ,around margenes de extremos ,between envia a estremos  */
+    justify-content: space-evenly;
+    /* align-items  se encarga del eje y  */
+    /* CSS TRICK */
+    align-items: flex-end;
+}
+
+.fila .cont-btn{
+    width: 45%;
+    height: 83.5%;
+    background: rgb(8, 215, 39);
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.fila .cont-btn h2{
+    color: azure;
+    font-size: 50px;
+    
+}
+
+.fila .cont-btn button{
+    padding: 8px 15px;
+    font-size: 22px;
+    border: 2px solid white;
+    margin: 10px 14px;
+    transition: .5s;
+    background: rgba(127, 255, 212, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+.fila .cont-fig{
+    width: 50%;
+    height: 95%;
+    background: rgb(183, 237, 55);
+    text-align: center;
+    padding-top: 30px;
+}
+/* llama a h2 del contenedor figura  */
+.fila .cont-fig h2{
+    color: brown;
+    font-size: 50px;
+}
+/* se llama a la figura  */
+.fila .cont-fig #figura{
+    
+   width: 200px;
+   height: 200px;
+   background: black;
+   margin: 0 auto;
+   transition: 1s;
+}
+.menu{
+    padding: 8px 20px;
+    background: blue;
+    position: absolute;
+    color: white;
+    right: 500px;
+    bottom: 150px;
+}
+
+.fila .cont-fig #figura.circulo{
+    border-radius: 50%;
+    /* hace rotar la figura  */
+    transform: rotate(360deg);
+    background: white;
+}
+
+.fila .cont-fig #figura.arriba{
+    /* translatey mover en eje y */
+    transform: translatey(-50px);
+    background: yellow;
+}
+
+.fila .cont-fig #figura.abajo {
+    
+    transform: translatey(50px);
+    background: blue;
+}
+
+.fila .cont-fig #figura.izquierda {
+    
+    transform: translate(-50px);
+    background: brown;
+}
+
+.fila .cont-fig #figura.derecha {
+    
+    transform: translate(50px);
+    background: white;
+}
+
+.fila .cont-fig #figura.digsupd {
+    
+    transform: translate(50px,-50px);
+    background: red;
+}
+
+.fila .cont-fig #figura.digsupi {
+    
+    transform: translate(-50px,-50px);
+    background: papayawhip;
+}
+
+.fila .cont-fig #figura.diginfd {
+    
+    transform: translate(-50px,50px);
+    background: purple;
+}
+
+.fila .cont-fig #figura.diginfi {
+    
+    transform: translate(50px,50px);
+    background: peru;
+}
+
+.fila .cont-fig #figura.rombo {
+    
+    transform: translatey(50px) rotate(45deg) skew(9deg,9deg);
+    background: green;
+    
+}
+
+.fila .cont-fig #figura.imagen {
+    background: url("../img/descarga.jpg");
+    background-size: contain;
+    width: 400px;
+   height: 400px;
+   /* background-repeat: no-repeat; */
+       
+}

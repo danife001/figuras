@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>capturar datos avartar </title>
+    <link rel="stylesheet" href="css/style-avatar.css">
+</head>
+<body>
+    <div class="fila">
+        <div id="formulario">
+            <h2>INFO AVATAR </h2>
+            <form action="#">
+                <label for="#">Nombres:</label>
+                <input type="text" id="cNOMBRES" placeholder="Ej: Daniel Ramirez">
+                <br>
+                <label for="#">Edad:</label>
+                <input type="number" id="cEDAD" placeholder="Ej: 25">
+                <br>
+                <label for="#">FECHA DE NACIMIENTO:</label>
+                <input type="date" id="cDATE" >
+                <br>
+                <label for="#">Genero:</label>
+                <select name="#" id="cGENERO">
+                    <option value="">Seleccionar</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="cEMAIL" placeholder="tucorreo@gmail.com">
+                <br>
+                <label for="#">Descripcion Personalidad  </label>
+                
+                <textarea name="#" id="cDESCRIPCION" cols="30" rows="4"></textarea>
+                <br>
+                <label for="#">Color</label>
+                <seLect name="#" id="cCOLOR">
+                    <option value="">Seleccionar</option>
+                    <option value="azul">Azul</option>
+                    <option value="verde">Verde</option>
+                    <option value="blanco">Blanco </option>
+                </SELect>
+                <br>
+                <button type="submit">aceptar</button>
+            </form>
+        </div>
+        <div id="card-avatar">
+            <h2>AVATAR</h2>
+            <img src="foto" src="img/hombre.png" alt="avatar por defecto">
+            <p><b>EDAD</b></p>
+            <P id="mEDAD"></P>
+            <p><b>GENERO</b></p>
+            <P id="mGENERO"></P>
+            <p><b>DATE</b></p>
+            <P id="mDATE"></P>
+            <p><b>EMAIL</b></p>
+            <P id="mEMAIL"></P>
+            <p><b>DESCRIPCION</b></p>
+            <P id="mDESCRIPCION"></P>
+            
+
+        </div>
+    </div>  
+
+
+
+
+</body>
+</html>
